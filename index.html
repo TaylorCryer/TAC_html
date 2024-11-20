@@ -10,65 +10,95 @@
 </head>
 
 <body>
+  <header>
   <h1>Hello World</h1>
-
-  <hr>
-
-  <nav>
+  <nav aria-labelledby="primary-navigation">
+    <h2 id="primary-navigation">Primary Navigation</h2>
     <ul>
       <li><a href="#HTML">Learning HTML</a></li>
       <li><a href="#moving">Planning to move!</a></li>
     </ul>
   </nav>
+</header>
 
-  <hr>
-
-
-  <section id="HTML">
-    <h2>I'm learning html</h2>
+<hr>
+<main>
+  <article id="HTML">
+    <h2>I'm learning!</h2>
     <p>This is my first HTML web page!</p>
-    <img src="images/hitmonlee.jpg" alt="HiTMoNlee" title="I am learning HTML5">
-    <p>You may be curious why there is a Pokemon on your screen. The answer is simple. Its name is Hitmonlee, and as of time of writing, it is the only Pokemon with the letters correlating to Hyper Text Mark-up Language in their correct order. I checked. </p>
-
-  <h3>My daily schedule</h3>
-  <p>Let me tell you how: </p>
-    <ol>
-    <li>... I learn more about web dev</li>
-    <li>... I plan out my schedule</li>
-    <li>... I use resources from <abbr title="Mozilla Developer Network">
-      <a href="https://developer.mozilla.org/">MDN</a></abbr></li>
-  </ol>
-</section>
-<hr>
-
-<section id="moving">
-  <h2>I'm also planning to move!</h2>
-    <p>I live in Milwaukee,<abbr title="Wisconsin">WI</abbr>, and will likely be moving to Portland, <abbr title="Oregon">OR</abbr>.</p>
+    <section>
+      <h3>HTML5</h3>
+      <figure>
+        <img src="images/hitmonlee.jpg" alt="Hitmonlee" title="HiTMonLee" width="556" height="481" loading="lazy">
+        <figcaption>
+          Hitmonlee &copy;Nintendo
+        </figcaption>
+      </figure>
+    <p>You may be curious why there is a Pokemon on your screen. The answer is simple. Its name is Hitmonlee, and as of time of writing, it is the only Pokemon with the letters in its name correlating to Hyper Text Mark-up Language in their correct order. I checked. </p>
     <figure>
-      <img src="images/Portland-skyline_612x612.jpg" alt="Portland Skyline" title="Portland has such a beautiful skyline." width="612" height="344" loading="lazy">
-      <figcaption>
-        Portland Skyline
-      </figcaption>
+      <figcaption>An example of HTML5 code</figcaption>
+      <p>
+        <code>
+          &lt;h1&gt;Hello World!&lt;/h1&gt;
+        </code>
+      </p>
     </figure>
-    <p>I've been studying a lot and could <em>really use a change of scenery</em></p>
-
-  <h3>Other places I'd like to move to</h3>
-    <ul>
-      <li><p>San Francisco, <abbr title="California">CA</abbr> I've been told the culture is wonderful.</p></li>
-      <li><p>Until recent events, Asheville, <abbr title="North Carolina">NC</abbr> was a beautiful place full of wonderful people. I haven't visited since hurricane Helene.</p></li>
-      <li><p>Chicago, <abbr title="Illinois">IL</abbr> always seemed like a lovely city, I grew up in the suburbs, but the city, proper always appealed to me.</p></li>
-    </ul>
-</section>
-
-<h3>Places I'd like to avoid</h3>
-  <dl>
-    <dt>Anchorage</dt><dd>Far too <strong>cold</strong>.</dd>
-    <dt>Louisville</dt><dd>I've visited for concerts before, the city has a bad vibe to it.</dd>
-    <dt>Florida</dt><dd>The whole state just seems miserable, sans Miami, which still doesn't seem like the type of place I wanna be.</dd>
-  </dl>
+   </section>
+   <section>
+    <h3>My daily schedule</h3>
+    <p>Let me tell you how: </p>
+      <ol>
+        <li>... I learn more about web dev</li>
+        <li>... I plan out my schedule</li>
+        <li>... I use resources from <abbr title="Mozilla Developer Network">
+        <a href="https://developer.mozilla.org/">MDN</a></abbr></li>
+      </ol>
+      <aside>
+        <details>
+          <summary>guess the <mark>number of hours</mark> I code per day</summary>
+          <p>I start sometime around <time datetime="11:00">11am</time>, and code for about 2 hours every day, while I nap a kid, and then more around <time datetime="23:00">11pm</time>, til I go to bed. In total, about <time datetime="PT4H">4 hours</time> daily!</p>
+        </details>
+      </aside>
+    </section>
+  </article>
 <hr>
-&lt;&lt;&lt;&copy; <a href="about.html">Taylor Cryer</a> &gt;&gt;&gt;
-<p>
-  <a href="#">Back To Top</a>
-</p>
+
+  <article id="moving">
+    <h2>I'm also planning to move!</h2>
+      <p>I live in Milwaukee,<abbr title="Wisconsin">WI</abbr>, and will likely be moving to Portland, <abbr title="Oregon">OR</abbr>.</p>
+      <figure>
+        <img src="images/Portland-skyline_612x612.jpg" alt="Portland Skyline" title="Portland has such a beautiful skyline." width="612" height="344" loading="lazy">
+        <figcaption>
+          Portland Skyline
+        </figcaption>
+      </figure>
+      <p>I've been studying a lot and could <em>really use a change of scenery</em></p>
+
+    <section>
+      <h3>Other places I'd like to move to</h3>
+        <ul>
+          <li><p>San Francisco, <abbr title="California">CA</abbr> I've been told the culture is wonderful.</p></li>
+          <li><p>Until recent events, Asheville, <abbr title="North Carolina">NC</abbr> was a beautiful place full of wonderful people. I haven't visited since hurricane Helene.</p></li>
+          <li><p>Chicago, <abbr title="Illinois">IL</abbr> always seemed like a lovely city, I grew up in the suburbs, but the city, proper always appealed to me.</p></li>
+        </ul>
+    </section>
+    <section>
+      <h3>Places I'd like to avoid</h3>
+        <dl>
+          <dt>Anchorage</dt><dd>Far too <strong>cold</strong>.</dd>
+          <dt>Louisville</dt><dd>I've visited for concerts before, the city has a bad vibe to it.</dd>
+          <dt>Florida</dt><dd>The whole state just seems miserable, sans Miami, which still doesn't seem like the type of place I wanna be.</dd>
+        </dl>
+     </section>
+  </article>
+</main>
+<hr>
+<footer>
+  <p>
+    &lt;&lt;&lt;&copy; <a href="about.html">Taylor Cryer</a> &gt;&gt;&gt;
+  </p>
+  <p>
+    <a href="#">Back To Top</a>
+  </p>
+</footer>
 </html>
